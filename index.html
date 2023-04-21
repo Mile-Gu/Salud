@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra Andrea Cohen</title>
+    <!--Aca tenemos que referenciar al css/-->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="flor-de-loto.ico">
+    <!-- aca Podriamos poner un icono tipo logo-->
+    <script src="https://kit.fontawesome.com/60c018b9b3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        
+        <h1>Dra Andrea Cohen</h1>
+        <h3>Medica Especialista en Ginecología y Obstetricia</h3>
+        <img src="media/foto.jpg" alt="Dra Andrea Cohen">
+        <nav class="nav">  
+            <ul>
+                <a class="link" href= "#Sobremi" target="_blank">Información Profesional</a> 
+                <a class="link" href="#Practicas" target="_blank">Prácticas</a>
+                <a class="link" href="#Temasdeinteresgeneral" target="_blank">Temas de interés general</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sobremi">
+            <h3 id="#Sobremi">Sobre mi</h3>
+            <p>Lorem <b>ipsum</b> dolor sit amet consectetur, adipisicing elit. Dolorem doloremque cumque, deleniti, nisi explicabo tempore adipisci nesciunt vero eius eum facilis omnis? Ea id voluptates praesentium molestiae impedit error natus?
+            Eius, impedit beatae corporis non voluptatibus, dolorum vero rerum, aperiam enim incidunt nesciunt architecto consequuntur illo obcaecati cupiditate. Explicabo quos placeat facilis reiciendis repudiandae, maxime illo tenetur atque consectetur pariatur.
+            Debitis eos sequi aspernatur, <br>praesentium corrupti quam officia excepturi beatae. Expedita, optio delectus necessitatibus vero qui rerum eveniet exercitationem fugit voluptatum laudantium itaque saepe odio repellendus asperiores provident ut architecto.
+            Magni aliquam odit iure perspiciatis aliquid. Praesentium ducimus odio alias, nulla reprehenderit non eaque nihil totam voluptatem, atque ut debitis! Perspiciatis aspernatur at tenetur neque voluptatem, cumque omnis nostrum ut?
+            Ex iusto inventore quam rerum sint asperiores ratione totam ipsa temporibus officia, minima consectetur doloremque a porro hic velit aspernatur? Itaque eligendi delectus dicta repellendus omnis nisi id. Rem, nobis.
+        </p>
+            <h3 class="">Experiencia laboral</h3>
+            <ul>
+                <li>Asistencial</li>
+                <li>Docencia</li>
+            </ul>
+        </section>
+
+        <!--ESTO SERÍAN LOS SERVICIOS OFRECIDOS?-->
+        <section class="practicas"> <!--ejemplo de multimedia , iframe-->
+            <h2 id="Practicas">Prácticas</h2>
+            <div class="practicasdiv">
+            <h4>Ambulatorias</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perferendis excepturi consequuntur incidunt odio provident rem deleniti sit? Blanditiis quae aperiam illo nisi deleniti quas doloremque ipsum, quaerat voluptatum reiciendis.</p>
+            <ul class="servicios">
+                <li>Papanicolao y Colposcopia</li>
+                <li>Examen mamario</li>
+                <li>Vulvoscopia</li>
+                <li>Biopsia exocervical</li>
+                <li>Legrado endocervical</li>
+                <li>Ectomía de polipo exocervical</li>
+                <li>Colocacion/Extracciónde DIU</li>
+                <li>Colocacion/Extracción de Implante subdérmico</li>
+                <li>Topicacion de Lesiones de bajo grado</li>
+                <li>Drenaje de Bartholinitis aguda</li>
+                </li>
+            </ul>
+            
+            <!--No sé por qué no funciona el iframe-->
+            <iframe class="videopap" src="https://youtu.be/Bxb7h7NpcGw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="temasdeinteresgeneral">
+        <h2 id="Temasdeinteresgeneral">Temas de interes general</h2> 
+            <p> Anticoncepcion-Salud de la mujer-ITS-Patologia mamaria-Patologia cervical</p>
+        </section>
+
+        <section class="Contacto"><!--ejemplo de formulario-->
+            <h3>Formulario de Contacto</h3>
+                <form action="mailto:eleonor67@gmail.com" method="POST" enctype="text/plain">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                <br>
+                    <label for="motivo">¿Sobre que tema te interesa consultar?</label>
+                    <select name="motivo">
+                        <option selected value="1">Anticoncepción</option>
+                        <option value="2">Infecciones de Transmision sexual</option>
+                        <option value="3">Asesoramiento preconcepcional</option>
+                        <option value="4">Control de salud de la mujer en las distintas etapas de la vida</option>
+                    </select>
+                <br>
+                    <label for="message"> Aca podes detallar mas sobre tu consulta:</label>
+                    <textarea id="message" name="message"  required></textarea>
+                <br>
+                    <input type="submit" value="Enviar"> 
+                
+                    <input type="reset" value="Borrar">
+
+                    <!-- <a href="mailto:eleonor67@gmail.com?subject=Hey! Vi tu portafolio y quiero contactarte&body=Cuerpo de mensaje predeterminado">Enviar correo electrónico generico</a>-->
+                
+                        <!--<input type="button" value="Salir">-->
+                </form>
+        </section>
+
+        <section class="cv">
+            <h3>Podes descarga mi CV </h3>
+            <a href="archivos/CV- DRA ANDREA COHEN (1).pdf" download>Descargar PDF</a>
+
+            <a href="archivos/CV- DRA ANDREA COHEN (1).pdf">Abrir PDF</a> 
+        </section>
+    </main>
+
+    <footer>
+        <h3>Mapa de la ciudad </h3>
+            
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2453508.20832845!2d-68.32864327293775!3d-34.40138128934946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1678286021897!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <p>Contacto</p>
+            <a href="https://www.linkedin.com/in/andrea-cohen-739724268/"><i class="fa-brands fa-linkedin-in"></i></a>
+            
+    </footer>
+</body>
+</html>
