@@ -24,6 +24,7 @@ header {
     font-size: 36px;
     margin: 0;
     text-align: center;
+    font-family: sans-serif 
   }
 
   h2 {
@@ -40,6 +41,7 @@ header {
     font-size: 24px;
     margin: 0;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   nav ul {
@@ -57,6 +59,7 @@ header {
     margin: 0 7px;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .link:hover {
@@ -72,9 +75,7 @@ header {
   float: left;
 }
 
-.videopap {
-  float: right;
-}
+.videopap { float: right ;}
 
 .temasdeinteresgeneral {
 
