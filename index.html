@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dra Andrea Cohen</title>
-    <!--Aca tenemos que referenciar al css/-->
     <link rel="stylesheet" href="/css/estilos.css" />
     <link rel="icon" href="/imagenes/flor-de-loto.ico" />
-    <!-- aca Podriamos poner un icono tipo logo-->
     <script
       src="https://kit.fontawesome.com/60c018b9b3.js"
       crossorigin="anonymous"
@@ -58,10 +56,9 @@
           </ul>
         </nav>
       </header>
-
+      <div class="titulo"><h2 id="sobremi">Sobre mí</h2></div>
       <main class="contenido">
         <div class="historia">
-          <div class="titulo"><h2 id="sobremi">Sobre mí</h2></div>
           <div class="marco">
             <div class="foto">
               <img src="imagenes/foto.jpg" alt="Dra Andrea Cohen" />
@@ -69,10 +66,31 @@
           </div>
           <div class="caja">
             <p>
-              Lorem <b>ipsum</b> dolor sit amet consectetur, adipisicing elit.
-              Dolorem doloremque cumque, deleniti, nisi explicabo tempore
-              adipisci nesciunt vero eius eum facilis omnis? Ea id voluptates
-              praesentium
+              Me recibí de médica en el año 1996 en la Universidad de Buenos
+              Aires (U.B.A), realicé la residencia en Ginecología y Obstetricia
+              en el Hospital General de Agudos " Cosme Argerich".
+            </p>
+            <p>
+              Luego de terminar la misma, obtuve el Título de postgrado de
+              Especialista en Ginecología y Obstetricia del Ministerio de Salud
+              de la Nación.
+            </p>
+            <p>
+              Desde entonces me desempeño como Médica de Planta de Ginecología y
+              Obstetricia del Centro de Salud N°9 en la Ciudad Autónoma de
+              Buenos Aires, donde además realizo ecografías,avalada por mi ti
+              título de Especialista en Ultrasonografía en Ginecología y
+              Obstetricia.
+            </p>
+            <p>
+              Me desempeñé durante 20 años como docente universitaria, y
+              actualmente formo parte de la formación de postgrado de numerosos
+              médicos residentes.
+            </p>
+            <p>
+              Dentro del ámbito privado, como parte del equipo de Ginecología,
+              del Sanatorio San José, donde atendemos mujeres de distintas Obras
+              sociales y prepagas.
             </p>
           </div>
           <div class="caja">
@@ -84,6 +102,7 @@
           </div>
           <div class="caja">
             <h3>Podes descarga mi CV</h3>
+            <i class="fa-solid fa-file-arrow-down" style="color: #ce5093"></i>
             <a
               href="archivos/CV- DRA ANDREA COHEN (1).pdf"
               download="cvcohen.pdf"
@@ -91,6 +110,7 @@
             >
             <br />
             <br />
+            <i class="fa-solid fa-file-pdf" style="color: #ce5093"></i>
             <a href="archivos/CV- DRA ANDREA COHEN (1).pdf"> Abrir PDF</a>
           </div>
         </div>
@@ -100,18 +120,14 @@
         <div class="titulo"><h2>Prácticas</h2></div>
         <div class="practicasdiv">
           <div class="cajaprac">
-            <span
-              ><h4>Ambulatorias</h4>
+            <span>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet perferendis excepturi consequuntur incidunt odio
-                provident rem deleniti sit? Blanditiis quae aperiam illo nisi
-                deleniti quas doloremque ipsum, quaerat voluptatum reiciendis.
-              </p></span
-            >
+                En la atención ambulatoria en consultorio se realizan las
+                siguientes prácticas:
+              </p>
+            </span>
             <br />
-            <span
-              ><h4>Servicios</h4>
+            <span>
               <ul class="cajaprac">
                 <li>Papanicolao y Colposcopia</li>
                 <li>Examen mamario</li>
@@ -146,8 +162,12 @@
         </div>
         <div class="cajaint">
           <p>
-            Anticoncepcion-Salud de la mujer-ITS-Patologia mamaria-Patologia
-            cervical
+            <img src="/imagenes/copa.jpg" width="90%" alt="" />
+          </p>
+        </div>
+        <div class="cajaint">
+          <p>
+            <img src="/imagenes/anticoncepcion.jpg" width="90%" alt="" />
           </p>
         </div>
       </section>
@@ -157,7 +177,7 @@
         <div class="cajacont">
           <h4>Consultorio</h4>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.5176103401927!2d-58.4129146!3d-34.5910706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca840ade19a9%3A0xa6c34ad9614838d0!2sG%C3%BCemes%203164%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1684529393143!5m2!1ses-419!2sar"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.515468415424!2d-58.41250828477063!3d-34.59112478046282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca84113d3105%3A0x7521a3ddd780e6df!2sG%C3%BCemes%203154%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1684794583524!5m2!1ses-419!2sar"
             width="100%"
             height="300"
             style="border: 0"
@@ -186,43 +206,121 @@
         <div class="cajacont">
           <h4>Formulario de Contacto</h4>
           <form
+            class="formulario"
+            id="formulario"
             action="mailto:anny.eli07@gmail.com"
             method="POST"
             enctype="text/plain"
           >
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required />
-            <br />
-            <br />
-            <label for="edad">Edad:</label>
-            <input type="text" id="edad" name="edad" required />
-            <br />
-            <br />
-            <label for="motivo">¿Sobre que tema te interesa consultar?</label>
-            <select name="motivo">
-              <option selected value="1">Anticoncepción</option>
-              <option value="2">Infecciones de Transmision sexual</option>
-              <option value="3">Asesoramiento preconcepcional</option>
-              <option value="4">
-                Control de salud de la mujer en las distintas etapas de la vida
-              </option>
-            </select>
-            <br />
-            <br />
-            <label for="message">
-              Acá podes detallar más sobre tu consulta:</label
-            ><br />
-            <br />
-            <textarea
-              id="message"
-              name="message"
-              cols="50"
-              rows="5"
-              required
-            ></textarea>
-            <br /><br />
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Borrar" />
+            <div class="formulario__grupo" id="grupo__nombre">
+              <label for="nombre" class="formulario__label">Nombre:</label>
+              <div class="formulario__grupo-input">
+                <input
+                  type="text"
+                  class="formulario__grupo-input"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Juan Perez"
+                />
+                <i
+                  class="formulario__validacion-estado fas fa-times-circle"
+                ></i>
+              </div>
+              <p class="formulario__input-error">Ingrese un nombre</p>
+            </div>
+            <div class="formulario__grupo" id="grupo__edad">
+              <label for="edad" class="formulario__label">Edad:</label>
+              <div class="formulario__grupo-input">
+                <input
+                  type="number"
+                  class="formulario__grupo-input"
+                  id="edad"
+                  name="edad"
+                />
+                <i
+                  class="formulario__validacion-estado fas fa-times-circle"
+                ></i>
+              </div>
+              <p class="formulario__input-error">Ingrese una edad</p>
+            </div>
+            <div class="formulario__grupo" id="grupo__mail">
+              <label for="mail" class="formulario__label">Mail:</label>
+              <div class="formulario__grupo-input">
+                <input
+                  type="email"
+                  class="formulario__grupo-input"
+                  id="mail"
+                  name="mail"
+                />
+                <i
+                  class="formulario__validacion-estado fas fa-times-circle"
+                ></i>
+              </div>
+              <p class="formulario__input-error">Ingrese su correo</p>
+            </div>
+            <div class="formulario__grupo" id="grupo__telefono">
+              <label for="edad" class="formulario__label">Teléfono:</label>
+              <div class="formulario__grupo-input">
+                <input
+                  type="number"
+                  class="formulario__grupo-input"
+                  id="telefono"
+                  name="telefono"
+                />
+                <i
+                  class="formulario__validacion-estado fas fa-times-circle"
+                ></i>
+              </div>
+              <p class="formulario__input-error">Ingrese un teléfono</p>
+            </div>
+            <div class="formulario__grupo" id="grupo__motivo">
+              <label for="motivo" class="formulario__label"
+                >¿Sobre qué tema te interesa consultar?</label
+              >
+              <div class="formulario__grupo-input">
+                <select name="motivo" class="formulario__grupo-input">
+                  <option selected value="1">Anticoncepción</option>
+                  <option value="2">Infecciones de Transmision sexual</option>
+                  <option value="3">Asesoramiento preconcepcional</option>
+                  <option value="4">
+                    Control de salud de la mujer en las distintas etapas de la
+                    vida
+                  </option>
+                </select>
+              </div>
+              <p class="formulario__input-error">Seleccione un motivo</p>
+            </div>
+            <div class="formulario__grupo" id="grupo__mensaje">
+              <label for="mensaje" class="formulario__grupo-input">
+                Acá podes detallar más sobre tu consulta:
+              </label>
+              <div class="formulario__grupo-input">
+                <textarea
+                  id="message"
+                  name="message"
+                  cols="50"
+                  rows="5"
+                ></textarea>
+              </div>
+              <p class="formulario__input-error">Escriba su consulta</p>
+            </div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+              <p>
+                <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por
+                favor completa el formulario correctamente.
+              </p>
+            </div>
+
+            <button type="reset" class="formulario__btn">Borrar</button>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+              <button type="submit" class="formulario__btn">Enviar</button>
+              <p
+                class="formulario__mensaje-exito"
+                id="formulario__mensaje-exito"
+              >
+                Formulario enviado exitosamente!
+              </p>
+            </div>
           </form>
         </div>
       </section>
@@ -232,8 +330,6 @@
           <a href="https://www.linkedin.com/in/andrea-cohen-739724268/"
             ><i class="fa-brands fa-linkedin-in"> </i
           ></a>
-        </div>
-        <div class="cajapie">
           <a
             href="https://instagram.com/ginecobyandrea?igshid=ZGUzMzM3NWJiOQ=="
           >
@@ -242,5 +338,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/formulario.js"></script>
   </body>
 </html>
