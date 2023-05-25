@@ -181,6 +181,7 @@ td {
   background: rgb(247, 236, 252);
   flex: 1 1 45%;
   padding: 10px;
+  overflow: auto;
 }
 .pie {
   display: grid;
