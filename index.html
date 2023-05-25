@@ -161,14 +161,26 @@
           <h2>Temas de interes general</h2>
         </div>
         <div class="cajaint">
-          <p>
-            <img src="/imagenes/copa.jpg" width="90%" alt="" />
-          </p>
+          <img src="imagenes/copa.jpg" width="70%" alt="" />
         </div>
         <div class="cajaint">
-          <p>
-            <img src="/imagenes/anticoncepcion.jpg" width="90%" alt="" />
-          </p>
+          <img src="imagenes/anticoncepcion.jpg" width="70%" alt="" />
+        </div>
+        <div class="cajaint">
+          <br />
+          <h4>Datos COVID-19</h4>
+          <br />
+          <table class="tablacovid">
+            <thead>
+              <tr>
+                <th>PAIS</th>
+                <th>CASOS ACTIVOS</th>
+                <th>TOTAL DE CASOS</th>
+                <th>TOTAL DE FALLECIDOS</th>
+              </tr>
+            </thead>
+            <tbody id="data"></tbody>
+          </table>
         </div>
       </section>
 
@@ -338,6 +350,37 @@
         </div>
       </footer>
     </div>
+    <script>
+      const url = "https://covid-19.dataflowkit.com/v1";
+
+      const getData = async () => {
+        try {
+          const response = await fetch(url);
+          const data = await response.json();
+          mostrarData(data);
+        } catch (error) {
+          console.log("Ocurrió un error", error);
+        }
+      };
+
+      const mostrarData = (data) => {
+        console.log(data);
+        const filteredData = data.filter(
+          (item) => item["Country_text"] === "Argentina"
+        );
+        const tableBody = filteredData
+          .map(
+            (item) => `<tr><td>${item["Country_text"]}</td>
+            <td>${item["Active Cases_text"]}</td>           
+            <td>${item["Total Cases_text"]}</td>
+            <td>${item["Total Deaths_text"]}</td></tr>`
+          )
+          .join("");
+        document.getElementById("data").innerHTML = tableBody;
+      };
+
+      getData();
+    </script>
     <script src="js/formulario.js"></script>
   </body>
 </html>

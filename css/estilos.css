@@ -103,6 +103,7 @@ ul {
   background: rgb(247, 236, 252);
   flex: 1 1 45%;
   padding: 10px;
+  color: #8f6277;
 }
 
 .marco {
@@ -151,7 +152,17 @@ ul {
   background: rgb(247, 236, 252);
   flex: 1 1 45%;
   padding: 10px;
-  align-content: center;
+  align-items: center;
+
+}
+
+.tablacovid th,
+td {
+  padding: 10px;
+  border-color: #48313c;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
 .contacto {
