@@ -38,6 +38,11 @@ header h3 {
   font-size: 15px;
 }
 
+.presentacion {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
 h2 {
   color: #48313c;
   background-color: #fbd5e58e;
